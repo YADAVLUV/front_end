@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <h1><a href="task6.html"> task_6</a></h1>
+    <form action="submit_form.php" method="post">
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+        </div>
+        <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="confirm_password">Re-enter Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div>
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number">
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+        <div>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state">
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <!-- Add more country options here -->
+            </select>
+        </div>
+        <div>
+            <label>Languages:</label>
+            <input type="checkbox" id="english" name="languages[]" value="English">
+            <label for="english">Hindi</label>
+            <input type="checkbox" id="spanish" name="languages[]" value="Spanish">
+            <label for="spanish">English</label>
+            <input type="checkbox" id="french" name="languages[]" value="French">
+            <label for="french">Telugu</label>
+            <input type="checkbox" id="german" name="languages[]" value="German">
+            <label for="german">German</label>
+        </div>
+        <div>
+            <input type="checkbox" id="declaration" name="declaration" required>
+            <label for="declaration">I declare that all the given details are true.</label>
+        </div>
+        <div>
+            <input type="submit" value="Register" >
+        </div>
+    </form>
+    <button style="position: fixed; bottom: 20px; right: 20px;">Login</button>
+</body>
+</html>
